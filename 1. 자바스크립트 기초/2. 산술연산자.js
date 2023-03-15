@@ -38,3 +38,9 @@ x += 1; // x = x + 1;
 x++;
 
 x += 3; // x = x + 3;
+
+
+var z = 10;
+
+console.log(z - 5);
+console.log(z);
