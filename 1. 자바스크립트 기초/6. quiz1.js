@@ -11,9 +11,7 @@ if (x > y) {
     x = y;
     y = t;
 }
-
 var total = 0;
-
 
 for (var n = x; n <= y; n++) {
     // 반복 코드
