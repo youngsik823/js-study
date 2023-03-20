@@ -31,9 +31,6 @@ var userInfo = {
 
 // 회원목록 배열
 var userList = userInfo.userList;
-console.log(userList);
-
-
 while (true) {
 
     // 계정 입력받기
