@@ -31,7 +31,7 @@ var userInfo = {
 
 // 회원목록 배열
 var userList = userInfo.userList;
-
+console.log(userList);
 
 
 while (true) {
