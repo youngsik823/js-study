@@ -10,8 +10,8 @@ Q. n의 약수의 개수를 구하기
 // 호출부
 function calcDivisor(num) {
     var n = [];
-    for(var i = 1; i<=20; i++ ){
-        if(num % i == 0){
+    for(var i = 1; i<=num; i++ ){
+        if(num % i === 0){
             n.push(i);
         }
     }
