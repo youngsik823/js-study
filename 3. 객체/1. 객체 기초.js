@@ -1,7 +1,7 @@
 // 객체 리터럴
 var dog = {
     // 프로퍼티 작성   
-    'name': '뽀삐',
+    'name': '뽀삐', //key
     kind: '진돗개',
     age: 3,
     // 'for waiting' : 11,
@@ -98,13 +98,13 @@ for (var k in dog) {
 //예시 : 게시판
 
 var articles = {
-    totalCount: 25578,  //총 게시물 수
+    totalCount: 25578,  //총 게시물 수 (key)
     admin: 'abc1234', //게시판 관리자 아이디
     page: 2558, //총 페이지 수
     articleList: [ // 게시물 목록
         {
-            bno: 3, //글번호
-            title: '가위바위보', //글제목
+            bno: 3, //글번호 
+            title: '가위바위보', //글제목 (key)
             writer: '김짱껨뽀',  //작성자
             content: '다덤벼 ^^', //글내용
             viewCount: 53, //조회수
