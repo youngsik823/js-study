@@ -22,7 +22,7 @@ console.log(`함수호출 후 x의 값: ${x}`);
 
 // console.log(z);
 // console.log(y);
-    
+
 
 // 중첩 함수 : 함수안에 함수를 정의
 
@@ -32,6 +32,7 @@ function outer(m) {
     console.log(m, n, v);
     inner();
     // 핼퍼 함수 : 호출이 함수 내부로 제한됨 (캡슐화) (호출 순서를 정한대로 실행하게 해준다.)
+    // 공개된 함수는 선언문을 쓰지만 숨겨진 함수는 화살표함수를 쓴다.
     function inner() {
         console.log(n);
         var m = 'inner local m';
