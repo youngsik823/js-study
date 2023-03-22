@@ -18,6 +18,8 @@
     <script>
         // console.log(document.body.firstChild);
 
+        // $banana 달러를 쓰면 태그로 쓰이는구나 라고 알려준다.
+        // const $banana = document.getElementById('banana');
         const banana = document.getElementById('banana');
         // document는 다 객체이므로 banana도 객체
         console.log(banana.attributes.id.value);
@@ -25,6 +27,12 @@
         // banana.attributes.id.value = '수고요~!';
 
         // banana.style.background = 'red';
+
+        // id가 grape인 요소노드를 취득하여
+        // 배경색상을 violet으로 가로길이를 fit-content 변경
+
+        const grape = document.getElementById('grape');
+        grape.style.background = 'violet';
     </script>
 </body>
 </html>
