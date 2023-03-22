@@ -65,6 +65,11 @@ function selectGameLevel() {
   // 한 게임이 진행되는 함수
   function runUpdownGame(gameData) {
   
+    // gameData 디스트럭처링
+    // 디스트럭처링은 사본을 복사하는거라 변경해도 원본에
+    // 적용되지 않습니다.
+    // 읽기전용만 하면된다. (수정하는거 제외)
+    const { countDown, secret, answer } = gameData;
     while (true) {
           
       if (!inputAnswerAndValidate(gameData)) continue;
