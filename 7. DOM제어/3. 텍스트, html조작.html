@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #greet span {
+            color: red;
+        }
+        #greet::before {
+            content: "what's up!";
+        }
+    </style>
+</head>
+
+<body>
+    <div id="greet">
+        Hello <span>World!</span>
+    </div>
+    <script>
+        const $greet = document.getElementById('greet');
+        console.log($greet.textContent);
+        
+        // 텍스트를 변경하겠다.
+        // $greet.textContent = '안녕하세요!';
+         // 수정하기전 태그로 감싸진것을 수정할 경우 CSS부여했던것이 다 사라진다.
+
+        $greet.innerHTML = '<span>안녕</span>하세요!'
+        // innerHTML을 이용하여 span태그가 적용되게 한다.
+
+        // 우리가 태그를 감쌀때 블록 -> 인라인 -> 텍스트 로 하는게 좋다.
+      
+        // 모든 자식태그를 삭제
+        // $greet.innerHTML = '';
+
+        // 자식 태그를 추가
+        $greet.innerHTML += '<span>메롱메롱</span>';
+
+    </script>
+</body>
+
+</html>
