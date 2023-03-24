@@ -35,7 +35,7 @@ function caseUp($icon) {
 function caseDown($icon) {
 
     // 1. #begin의 숫자값이 클릭값 - 1로 변경
-    document.getElementById('begin').textContent = +$icon.dataset.iconNumber +1;
+    document.getElementById('begin').textContent = +$icon.dataset.iconNumber -1;
     // 2. #up .selected 제거, #down에 추가
     document.getElementById('up').classList.remove('selected');
     document.getElementById('down').classList.add('selected');
