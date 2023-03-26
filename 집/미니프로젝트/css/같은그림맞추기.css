@@ -1,0 +1,88 @@
+@import url("/집/미니프로젝트/common.css");
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto 0;
+    width: 700px;
+  
+    text-align: center;
+}
+
+.container .gameBox {
+}
+.container .gameBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+.container .gameBox #menu {
+}
+.container .gameBox #menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.container .gameBox #menu .start {
+    list-style: none;
+}
+.container .gameBox #menu .start #startBtn {
+    font-weight: 700;
+    font-size: 18px;
+}
+.container .gameBox #menu .scoreText {
+    list-style: none;
+    padding: 3px 12px;
+}
+.container .gameBox #menu .scoreText span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container .gameBox #count {
+    color: #fff;
+    background: #5aafff;
+    padding: 20px 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+.container .gameBox #playBox {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+.container .gameBox #playBox #card {
+    border: 1px solid #000;
+    width: 100%;
+}
+.container .gameBox #playBox #card .box {
+    width: 25%;
+    height: 150px;
+
+    float: left;
+}
+
+.container .gameBox #playBox #card .box:nth-child(4n + 1) {
+    clear: both;
+}
+.container .gameBox #playBox #info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 99;
+    background: #ddd;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
