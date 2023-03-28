@@ -11,11 +11,9 @@ body {
     width: 700px;
     text-align: center;
     border: 1px solid #000;
-   
 }
 
 .container .gameBox {
-   
 }
 .container .gameBox h2 {
     font-size: 40px;
@@ -23,7 +21,6 @@ body {
     margin: 40px 0;
 }
 .container .gameBox #menu {
-    
 }
 .container .gameBox #menu ul {
     display: flex;
@@ -34,7 +31,7 @@ body {
 .container .gameBox #menu .start {
     list-style: none;
 }
-.container .gameBox #menu .start #startBtn {
+.container .gameBox #menu .start .startBtn {
     font-weight: 700;
     font-size: 18px;
 }
@@ -50,77 +47,54 @@ body {
     font-size: 28px;
     font-weight: 500;
 }
-.container .gameBox #wrap {
+.container .gameBox .wrap {
     position: relative;
     height: 600px;
     width: 100%;
     /* background: #000; */
 }
-.container .gameBox #wrap #card {
+.container .gameBox .wrap .card {
     width: 25%;
     height: 25%;
     transition: all 0.8s;
     transform-style: preserve-3d;
-    
+    float: left;
     border: 1px solid #000;
-    display: flex;
-   
 }
 /* .container .gameBox #playBox.flipped #card {
     transform: rotateY(180deg);
 } */
-.container .gameBox #wrap:hover #card {
+.container .gameBox .wrap .flipped {
     transform: rotateY(180deg);
 }
-.container .gameBox #wrap.flipped #card {
+.container .gameBox .wrap .card > .back {
     transform: rotateY(180deg);
-    
+    z-index: 9;
 }
-.container .gameBox #wrap #card > div {
+/* .container .gameBox #wrap.flipped #card {
+    transform: rotateY(180deg);
+} */
+.container .gameBox .wrap .card > div {
     position: absolute;
-   
-    
 }
-.container .gameBox #wrap #card .front {
+.container .gameBox .wrap .card .front {
     width: 100%;
     height: 150px;
     border: 1px solid #000;
-    float: left;
     cursor: pointer;
     background: blue;
     backface-visibility: visible;
-    z-index: 5;
-   
+    z-index: 9;
 }
-.container .gameBox #wrap #card .box {
+.container .gameBox .wrap .card .back {
     width: 100%;
     height: 150px;
     border: 1px solid #000;
-    float: left;
     cursor: pointer;
     backface-visibility: hidden;
     z-index: 5;
 }
 
-.container .gameBox #wrap #card .front:hover {
-    transform: scale(1.03);
-}
-.container .gameBox #wrap #card .box:nth-child(4n + 1) {
+.container .gameBox .wrap .card:nth-child(4n + 1) {
     clear: both;
 }
-.container .gameBox #wrap #card .front:nth-child(4n + 1) {
-    clear: both;
-}
-/* .container .gameBox #playBox #info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-} */
