@@ -27,7 +27,7 @@ for (let i = 0; i < $randomBox.length; i++) {
 function startGame() {
     
     const card = document.querySelector('.gameBox');
-    document.querySelectorAll('#playBox').forEach((card, index) => { // 초반 카드 공개
+    document.querySelectorAll('#wrap').forEach((card, index) => { // 초반 카드 공개
         setTimeout(() => {
           card.classList.add('flipped');
         }, 1000 + 100 * index);
