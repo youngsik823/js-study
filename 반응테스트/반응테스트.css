@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     position: relative;
+    
 }
 body {
     text-align: center;
@@ -18,7 +19,8 @@ body {
     text-align: center;
     margin: 20px 0;
     font-size: 35px;
-    margin-top: 75px;
+    margin-top: 30px;
+    
 }
 .log {
     font-size: 30px;
@@ -40,3 +42,9 @@ body {
     align-items: center;
     font-size: 40px;
 }
+.home img{
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;  
+}
+

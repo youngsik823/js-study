@@ -16,27 +16,27 @@ const handleScreenClick = (e) => {
         $screen.textContent = "대기";
         timeout = setTimeout(() => {
             $screen.style.backgroundColor = "green";
-            $screen.textContent = "클릭하세요!";
+            $screen.textContent = "클릭!!";
 
             startTime = new Date().getTime() / 1000;
         }, Math.floor(Math.random() * 2000) + 2000);
     } else if ($screen.style.backgroundColor === "red") {
-        $screen.textContent = `너무 빨랐습니다!`;
+        $screen.textContent = `빨라요~!!`;
         clearTimeout(timeout);
         setTimeout(init, 2000);
     } else if ($screen.style.backgroundColor === "green") {
         flag = false;
         endTime = new Date().getTime() / 1000;
         time =
-            Math.round((endTime - startTime + Number.EPSILON) * 10000) / 10000;
-        $screen.innerHTML = `성공!<br>${time}초 만에 성공했습니다.`;
+            Math.round((endTime - startTime) * 10000) / 10000;
+        $screen.innerHTML = `${time}초`;
         recordArray.push(time);
 
         let averageSpeed =
             recordArray.reduce((accm, curr) => accm + curr) /
             recordArray.length;
         $log.textContent = `평균 속도: ${averageSpeed}초`;
-        setTimeout(init, 3000);
+        setTimeout(init, 1000);
 
         $counter++;
         $count.innerHTML = `횟수: ${$counter}`;
